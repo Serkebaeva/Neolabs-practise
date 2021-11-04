@@ -28,48 +28,35 @@ if (redColor) {
 */
 
 ////////////////////FOURTH ASSIGNMENT////////////////
-const months = [
-  "1 Январь",
-  "2 Февраль",
-  "3 Март",
-  "4 Апрель",
-  "5 Май",
-  "6 Июнь",
-  "7 Июль",
-  "8 Август",
-  "9 Сентябрь",
-  "10 Октябрь",
-  "11 Ноябрь",
-  "12 Декабрь",
+let months = [
+  "Январь",
+  "Февраль",
+  "Март",
+  "Апрель",
+  "Май",
+  "Июнь",
+  "Июль",
+  "Август",
+  "Сентябрь",
+  "Октябрь",
+  "Ноябрь",
+  "Декабрь",
 ];
 
-let spring = months[(2, 3, 4)];
-let summer = months[(5, 6, 7)];
-let autumn = months[(8, 9, 10)];
-let winter = months[(11, 0, 1)];
+let spring = [months[2], months[3], months[4]];
+let summer = [months[5], months[6], months[7]];
+let autumn = [months[8], months[9], months[10]];
+let winter = [months[11], months[0], months[1]];
 
-let randomizer = Math.floor(Math.random() * 12);
+let randomizer = Math.floor(Math.random() * 11) + 1;
+console.log(randomizer);
 
-if (randomizer <= 4) {
-  console.log("spring");
-} else if (randomizer <= 7) {
-  console.log("summer");
-} else if ((randomizer = 11 || randomizer <= 0 || randomizer <= 1)) {
-  console.log("winter");
-} else if (randomizer <= 10) {
-  console.log("autumn");
+if (randomizer >= 12 || randomizer <= 2) {
+  console.log(winter + " WINTER");
+} else if (randomizer >= 3 && randomizer <= 5) {
+  console.log(spring + " SPRING");
+} else if (randomizer >= 6 && randomizer <= 8) {
+  console.log(summer + " SUMMER");
+} else if (randomizer >= 9 && randomizer <= 11) {
+  console.log(autumn + " AUTUMN");
 }
-
-function seasonsMonths() {
-  if (randomizer <= 4) {
-    console.log(spring);
-  } else if (randomizer <= 7) {
-    console.log(summer);
-  } else if ((randomizer = 11 || randomizer <= 0 || randomizer <= 1)) {
-    console.log(winter);
-  } else if (randomizer <= 10) {
-    console.log(autumn);
-  }
-}
-
-seasonsMonths;
