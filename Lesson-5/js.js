@@ -18,3 +18,13 @@ for (let i = 0; i < names.length; i++) {
   console.log(`Hello, ${names[i]}`);
 }
 */
+//////////////////////////////////////////////////////////////
+let string = '847'
+
+if (isNaN(+string)) {
+	console.log('Sorry, not a number, please type in only Numbers!')
+} else {
+	let stringValues = ((''+string).split(''));
+	console.log(stringValues)
+	
+}
