@@ -36,6 +36,16 @@ while (i <=100) {
 //n! = 1 * … * (n-2) * (n-1) * n.
 //Пример вывода: Факториал 5 = 120.
 
+let num = 1
+
+let i = 1
+while (i <= 10) {
+ num = num * i
+ console.log(num)
+ i++
+}
+
+console.log(num)
 
 //////////////////////////////zadanie 5///////////////////////////////////
 //5. Дан массив с элементами 1, 2, 3, 4, 5, 6, 7, 8, 9. С помощью цикла for создайте строку '-1-2-3-4-5-6-7-8-9-'.
@@ -55,7 +65,7 @@ while (i <= elements.length){
 */
 
 //////////////////////////////zadanie 6///////////////////////////////////
-const users = [
+/*const users = [
 	{ name: 'Bakyt', age: 17, job: 'Student' },
 	{ name: 'Erjan', age: 21, job: 'Student' },
 	{ name: 'Gulzada', age: 18, job: 'Student' },
@@ -66,5 +76,5 @@ let i = 0;
 while (i < users.length) {
 users[i].age >= 18 ? console.log(`${users[i].name} Совершеннолетний!`) : null;
 i++
-}
+}*/
 

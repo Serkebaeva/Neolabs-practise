@@ -26,5 +26,10 @@ if (isNaN(+string)) {
 } else {
 	let stringValues = ((''+string).split(''));
 	console.log(stringValues)
+	let stringReverse = (''+stringValues.join(''))
+	console.log(stringReverse)
+	console.log(typeof stringReverse)
 	
 }
+
+
